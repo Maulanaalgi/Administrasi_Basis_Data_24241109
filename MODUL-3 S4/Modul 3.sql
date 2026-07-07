@@ -10,7 +10,7 @@ USE kelas_c_mart;
 -- fungsi matematika dan tanggal (Date)
 -- Klausal WHERE, LIKE
 
--- praktek 1
+-- PRAKTEK 1
 -- Menggunakan nilai literal pada SELECT
 SELECT 77;
 
@@ -29,7 +29,7 @@ SELECT NULL AS kosong;
 -- praktek 4
 SELECT 5%2 AS sisa_bagi, 5/2 AS hasil_bagi_1, 5 DIV 2 AS hasil_bagi_2;
 
--- latihan mandiri 1
+-- latihan sendiri 1
 SELECT 5*4;
 SELECT (4*8)%7;
 SELECT (4*8) mod 7;
@@ -56,7 +56,9 @@ SELECT qty_harga AS total_beli FROM tr_penjualan;
 -- praktek 7
 SELECT 5=5, 5!=5, 5!=4;
 
--- latihan mandiri 2
+
+
+-- latihan 2
 SELECT 1 = true;
 SELECT 1 = false;
 SELECT 5 >= 5;
@@ -129,7 +131,7 @@ WHERE nama_produk  = 'Flashdisk DQLab 32 GB';
 SELECT nama_produk FROM  tr_penjualan
 WHERE nama_produk LIKE 'F%';
 
--- latihan mandiri 4
+-- latihan mandiri
 -- 1. nama_produk yang memiliki karakter kedua 'a' pada tabel tr_penjualan_dqlab
 SELECT *
 FROM tr_penjualan
