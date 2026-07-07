@@ -30,7 +30,7 @@ SELECT NULL AS kosong;
 SELECT 5%2 AS sisa_bagi, 5/2 AS hasil_bagi_1, 5 DIV 2 AS hasil_bagi_2;
 
 -- latihan sendiri 1
-SELECT 5*4;
+SELECT 4*2;
 SELECT (4*8)%7;
 SELECT (4*8) mod 7;
 
