@@ -18,7 +18,7 @@ SELECT nama_produk, qty FROM tr_penjualan ORDER BY qty;
 -- ambil nama_produk, qty dari tabel penjualan berdasarkan qty dan nama produk
 SELECT nama_produk, qty FROM tr_penjualan ORDER BY qty, nama_produk;
 
--- Latihan mandiri 1
+-- Latihan mandiri #1
 -- saoal 1
 SELECT * FROM tr_penjualan ORDER BY qty, tgl_transaksi;
 -- soal 2
@@ -35,7 +35,7 @@ SELECT nama_produk, qty FROM tr_penjualan ORDER BY qty DESC;
 -- ambil nama_produk dan qty dari tabel penjualan urut qty, nama_produk terbesar ke kecil 
 SELECT nama_produk, qty FROM tr_penjualan ORDER BY qty DESC, nama_produk;
 
--- Latihan mandiri 2
+-- Latihan mandiri #2
 -- saoal 1
 SELECT * FROM tr_penjualan ORDER BY tgl_transaksi DESC, qty ASC;
 -- soal 2
@@ -49,7 +49,7 @@ SELECT * FROM pelanggan ORDER BY alamat DESC;
 -- ambil nama_produk, qty, harga, dan aty*harga, urutkan dan berdasar kan total besar
 SELECT nama_produk, qty, harga, qty*harga AS total FROM tr_penjualan ORDER BY total DESC;
 
--- Latihan mandiri 3
+-- Latihan mandiri #3
 -- saoal 1
 SELECT nama_produk,
        qty,
@@ -66,7 +66,7 @@ ORDER BY total_harga DESC;
 -- ambil semuan nama_produk dan qty yang huruf depannya 'F' urut qty
 SELECT nama_produk, qty FROM tr_penjualan WHERE nama_produk LIKE 'F%' ORDER BY qty DESC;
 
--- Latihan mandiri 4
+-- Latihan mandiri #4
 -- saoal 1
 SELECT * FROM tr_penjualan WHERE diskon_persen > 0 ORDER BY harga DESC;
 -- soal 2
@@ -136,7 +136,7 @@ SELECT nama_produk, SUM(qty) FROM tr_penjualan GROUP BY nama_produk ORDER BY SUM
 SELECT nama_produk, SUM(qty) FROM tr_penjualan GROUP BY nama_produk HAVING SUM(qty) < 6 ORDER BY SUM(qty) DESC;
 
 
--- Latihan mandiri 5
+-- Latihan mandiri #5
 -- saoal 1
 SELECT nama_produk, SUM(qty) AS total_terjual FROM tr_penjualan GROUP BY nama_produk HAVING SUM(qty) > 4;
 -- soal 2
